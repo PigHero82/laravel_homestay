@@ -4,6 +4,10 @@
     Data Pembayaran
 @endsection
 
+@section('css')
+    <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/vendors/css/tables/datatable/datatables.min.css') }}">
+@endsection
+
 @section('content')
     <!-- Card Statistic -->
     <section>
@@ -171,4 +175,14 @@
         </div>
     </x-modal>
     <!--/ Card Statistic -->
+@endsection
+
+@section('js')
+    <script src="{{ asset('app-assets/vendors/js/tables/datatable/datatables.min.js') }}"></script>
+    <script src="{{ asset('app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            $('table').DataTable();
+        });
+    </script>
 @endsection

@@ -60,13 +60,14 @@
         legend: { display: false },
         scales: {
             xAxes: [{
-            display: true,
-            gridLines: {
-                color: grid_line_color,
-            },
-            scaleLabel: {
                 display: true,
-            }
+                gridLines: {
+                    color: grid_line_color,
+                },
+                scaleLabel: {
+                    display: true,
+                    labelString: '2020',
+                }
             }],
             yAxes: [{
             display: true,
